@@ -15,7 +15,7 @@ const Tab1Screen1 = (props) => (
                 justifyContent: "center",
 
             }}>
-                <Text style={{marginLeft: "20%"}}>Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
+                <Text style={{marginLeft: "20%"}}> hahahahaa Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
             </View>
 
         </View>

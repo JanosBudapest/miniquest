@@ -3,7 +3,7 @@ import {View, Text} from "react-native";
 
 const Tab1Screen2 = () => (
     <View> 
-        <Text style={{fontSize: 20, color:"#999", textAlign: "center"}}>Aaron! Gib mir ein Bier aus!</Text>
+        <Text style={{fontSize: 20, color:"#999", textAlign: "center"}}>Quest erstellen</Text>
     </View>
 );
 

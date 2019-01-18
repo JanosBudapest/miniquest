@@ -7,21 +7,24 @@ const Tab1Screen1 = (props) => (
         <View style={{flex: 1, borderColor: "black", borderWidth: 1}}>
 
             <View style={{
-                height: "50%",
-                width: "50%",
+                height: "15%",
+                width: "95%",
                 borderColor: "black",
+                backgroundColor:'#c6e2ff',
                 borderWidth: 1,
                 alignItems: "center",
                 justifyContent: "center",
+                borderRadius: 25,
 
             }}>
-                <Text style={{marginLeft: "20%"}}>Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
+                <Text style={{marginLeft: "0%"}}> Meine Quests</Text>
             </View>
 
         </View>
         <Text>Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
-        <Button title={"zu 1/2"} onPress={() => {
+        <Button title={"+ Quest"} onPress={() => {
             props.navigation.navigate("Tab1Screen2")
+            
         }}/>
     </View>
 );

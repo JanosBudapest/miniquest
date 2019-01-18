@@ -26,23 +26,26 @@ const tabs = createBottomTabNavigator({
             navigationOptions: {
                 tabBarLabel: "Home",
                 tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
+
             }
         }),
 
-    Tab2: createStackNavigator({
+    Tab2: createStackNavigator(
+        {
 
-        Tab2Screen1: {
-            screen: Tab2Screen1,
-        },
-        Tab2Screen2: {
-            screen: Tab2Screen2,
-        }
+            Tab2Screen1: {
+                screen: Tab2Screen1,
+            },
+            Tab2Screen2: {
+                screen: Tab2Screen2,
+            }
 
-    } , {
-        navigationOptions: {
-            tabBarLabel: "Quests"
-        }
-    }),
+        }, {
+            navigationOptions: {
+                tabBarLabel: "Quests",
+                tabBarIcon: <Image source={require("./images/home/1x/baseline_home_black_18dp.png")} />
+            }
+        }),
 
     Tab3: createStackNavigator({
 
@@ -54,10 +57,10 @@ const tabs = createBottomTabNavigator({
         }
 
     }, {
-        navigationOptions: {
-            tabBarLabel: "Karte"
-        }
-    }),
+            navigationOptions: {
+                tabBarLabel: "Karte"
+            }
+        }),
 
     Tab4: createStackNavigator({
 
@@ -69,10 +72,10 @@ const tabs = createBottomTabNavigator({
         }
         */
     }, {
-        navigationOptions: {
-            tabBarLabel: "Nachrichten"
-        }
-    }),
+            navigationOptions: {
+                tabBarLabel: "Nachrichten"
+            }
+        }),
 
     Tab5: createStackNavigator({
 
@@ -84,10 +87,10 @@ const tabs = createBottomTabNavigator({
         }
         */
     }, {
-        navigationOptions: {
-            tabBarLabel: "Profil"
-        }
-    }),
+            navigationOptions: {
+                tabBarLabel: "Profil"
+            }
+        }),
 
 
 });

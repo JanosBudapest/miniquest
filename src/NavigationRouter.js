@@ -2,6 +2,7 @@ import { createBottomTabNavigator, createStackNavigator } from "react-navigation
 import React from "react";
 import {Image} from "react-native";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
+import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 import Tab1Screen1 from "./Tab1Screen1";
 import Tab1Screen2 from "./Tab1Screen2";
@@ -25,7 +26,7 @@ const tabs = createBottomTabNavigator({
         }, {
             navigationOptions: {
                 tabBarLabel: "Home",
-                tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
+                tabBarIcon: <IconFontAwesome name={"home"} size={24} color={"black"}/>
 
             }
         }),
@@ -88,7 +89,8 @@ const tabs = createBottomTabNavigator({
         */
     }, {
             navigationOptions: {
-                tabBarLabel: "Profil"
+                tabBarLabel: "Profil",
+                tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
             }
         }),
 

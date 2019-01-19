@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
     container: {
         elevation: 4,
         backgroundColor: '#2196F3',
-        borderRadius: 2,
+        borderRadius: 20,
         width: 150,
-        height: 40,
+        height: 45,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-around",

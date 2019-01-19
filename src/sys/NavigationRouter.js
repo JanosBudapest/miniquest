@@ -3,6 +3,8 @@ import React from "react";
 import {Image} from "react-native";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
+import IconFontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import IconMaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Home from "../features/home/Home";
 import Tab1Screen2 from "../Tab1Screen2";
@@ -44,7 +46,7 @@ const tabs = createBottomTabNavigator({
         }, {
             navigationOptions: {
                 tabBarLabel: "Quests",
-                tabBarIcon: <Image source={require("../images/home/1x/baseline_home_black_18dp.png")} />
+                tabBarIcon: <IconFontAwesome5 name={"tasks"} size={24} color={"black"}/>
             }
         }),
 
@@ -59,7 +61,8 @@ const tabs = createBottomTabNavigator({
 
     }, {
             navigationOptions: {
-                tabBarLabel: "Karte"
+                tabBarLabel: "Karte",
+                tabBarIcon: <IconMaterialCommunityIcons name={"map-search"} size={24} color={"black"}/>
             }
         }),
 
@@ -74,7 +77,8 @@ const tabs = createBottomTabNavigator({
         */
     }, {
             navigationOptions: {
-                tabBarLabel: "Nachrichten"
+                tabBarLabel: "Nachrichten",
+                tabBarIcon: <IconMaterialCommunityIcons name={"message-text-outline"} size={24} color={"black"}/>
             }
         }),
 
@@ -90,7 +94,7 @@ const tabs = createBottomTabNavigator({
     }, {
             navigationOptions: {
                 tabBarLabel: "Profil",
-                tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
+                tabBarIcon: <IconMaterialUi name={"person"} size={24} color={"black"}/>
             }
         }),
 

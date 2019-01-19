@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {View, Text, Button} from "react-native";
+import IconButton from "./basicComponents/IconButton";
+import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 
 const Tab1Screen1 = (props) => (
     <View style={{borderColor: "black", borderWidth: 1, flex: 1}}>
@@ -22,10 +24,14 @@ const Tab1Screen1 = (props) => (
 
         </View>
         <Text>Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
-        <Button title={"+ Quest"} onPress={() => {
-            props.navigation.navigate("Tab1Screen2")
-            
-        }}/>
+
+        <IconButton
+            icon={<IconMaterialUi name={"person"} size={26} color={"white"}/>}
+            text={"testText"}
+            onPress={() => props.navigation.navigate("Tab1Screen2")}
+            loading={false}
+        />
+
     </View>
 );
 

@@ -16,7 +16,7 @@ import AppContainer from "./AppContainer";
 export default class Setup extends Component{
 
     componentWillMount() {
-        firebase.initializeApp(firebaseconfig);
+        // firebase.initializeApp(firebaseconfig);
     }
 
     render () {

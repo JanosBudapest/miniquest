@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet, SafeAreaView} from "react-native";
 import IconButton from "../../basicComponents/IconButton";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 import HomeHeader from "./HomeHeader";

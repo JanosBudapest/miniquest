@@ -3,6 +3,7 @@ import {View, Text, StyleSheet} from "react-native";
 import IconButton from "../../basicComponents/IconButton";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 import HomeHeader from "./HomeHeader";
+import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 const styles = StyleSheet.create({
     container: {
@@ -20,8 +21,8 @@ const Home = (props) => (
         <Text>Was passiert, wenn ich auf den blauen Knopf drücke?</Text>
 
         <IconButton
-            icon={<IconMaterialUi name={"person"} size={26} color={"white"}/>}
-            text={"testText"}
+            icon={<IconFontAwesome name={"briefcase"} size={24} color={"white"}/>}
+            text={"Quest"}
             onPress={() => props.navigation.navigate("Tab1Screen2")}
             loading={false}
         />

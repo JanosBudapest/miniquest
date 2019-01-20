@@ -3,8 +3,8 @@ import {Text, StyleSheet, TextInput, SafeAreaView} from "react-native";
 import IconButton from "../../basicComponents/IconButton";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 // import Firebase from "../../sys/Firebase";
-import "@firebase/firestore"
-import * as firebase from "firebase";
+// import "@firebase/firestore"
+// import * as firebase from "firebase";
 
 
 const styles = StyleSheet.create({
@@ -35,9 +35,9 @@ class SignUp extends Component {
         console.log("handleSignUp", this.state);
         const {email, password} = this.state;
 
-        firebase.auth.createUserWithEmailAndPassword(email, password)
-            .then(() => this.props.navigation.navigate("App"))
-            .catch((error) =>console.log(error));
+        // firebase.auth.createUserWithEmailAndPassword(email, password)
+        //     .then(() => this.props.navigation.navigate("App"))
+        //     .catch((error) =>console.log(error));
     };
 
     render () {

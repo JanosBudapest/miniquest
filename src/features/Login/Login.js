@@ -27,15 +27,11 @@ class Login extends Component {
         }
     }
 
-    tester() {
-
-    }
-
     render () {
         return (
             <SafeAreaView style={styles.container}>
 
-                <Text>SignUp</Text>
+                <Text>Login</Text>
 
                 <TextInput
                     style={styles.input}

@@ -16,8 +16,9 @@ const styles = StyleSheet.create({
     input: {
         borderWidth: 1,
         padding: 5,
-        width: 150,
-        height: 40,
+        width: 180,
+        height: 50,
+        borderRadius: 10,
     }
 });
 
@@ -28,6 +29,7 @@ class SignUp extends Component {
         this.state = {
             email: "",
             password: "",
+            address: "",
         }
     }
 
@@ -56,6 +58,12 @@ class SignUp extends Component {
                     style={styles.input}
                     placeholder="password"
                     onChangeText={(value) => this.setState({password: value})}
+                />
+
+                <TextInput
+                    style={styles.input}
+                    placeholder="address"
+                    onChangeText={(value) => this.setState({address: value})}
                 />
 
                 <IconButton

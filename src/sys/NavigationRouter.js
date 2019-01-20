@@ -16,7 +16,7 @@ import Tab2Screen2 from "../Tab2Screen2";
 import Tab3Screen1 from "../Tab3Screen1";
 import Tab3Screen2 from "../Tab3Screen2";
 import Tab4Screen1 from "../Tab4Screen1";
-import Tab5Screen1 from "../Tab5Screen1";
+import Profile from "../features/profile/Profile";
 
 const tabs = createBottomTabNavigator({
 
@@ -88,7 +88,7 @@ const tabs = createBottomTabNavigator({
     Tab5: createStackNavigator({
 
         Tab5Screen1: {
-            screen: Tab5Screen1,
+            screen: Profile,
         },
         /*Tab5Screen2: {
             screen: Tasdasdasdasdab5Screen2,
@@ -110,6 +110,6 @@ export default createSwitchNavigator(
         Login: Login,
         App: tabs,
     }, {
-        initialRouteName: "App",
+        initialRouteName: "Login",
     }
 )

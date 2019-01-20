@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1398276092",
+    "firebase_url": "https://miniquest-alpha.firebaseio.com",
+    "project_id": "miniquest-alpha",
+    "storage_bucket": "miniquest-alpha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1398276092:android:2b7f7075d06cc035",
+        "android_client_info": {
+          "package_name": "com.miniquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1398276092-h0n4r2nkdg9btqdbpvbharh0ilml7il5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miniquest",
+            "certificate_hash": "33e42797e6a28eaf63be150b626ae29839d4f62b"
+          }
+        },
+        {
+          "client_id": "1398276092-lbpoti1sqm3ksm8nc7l2gjlq3ebibbag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrBonNt6nsDJXjr72khhMJV7qetMPm_vs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1398276092-lbpoti1sqm3ksm8nc7l2gjlq3ebibbag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

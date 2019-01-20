@@ -1,11 +1,8 @@
 import React, {Component} from "react";
-import {Text, StyleSheet, TextInput, SafeAreaView} from "react-native";
+import {Text, StyleSheet, TextInput, SafeAreaView, TouchableOpacity} from "react-native";
 import IconButton from "../../basicComponents/IconButton";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
-// import Firebase from "../../sys/Firebase";
-// import "@firebase/firestore"
-// import * as firebase from "firebase";
-
+import firebase from "react-native-firebase";
 
 const styles = StyleSheet.create({
     container: {
@@ -33,13 +30,12 @@ class SignUp extends Component {
         }
     }
 
-    handleSignUp = async () => {
-        console.log("handleSignUp", this.state);
+    handleSignUp = () => {
         const {email, password} = this.state;
 
-        // firebase.auth.createUserWithEmailAndPassword(email, password)
-        //     .then(() => this.props.navigation.navigate("App"))
-        //     .catch((error) =>console.log(error));
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then(() => this.props.navigation.navigate("App"))
+            .catch((error) => console.log(error));
     };
 
     render () {
@@ -71,6 +67,10 @@ class SignUp extends Component {
                     icon={<IconMaterialUi name={"person"} size={26} color={"white"}/>}
                     onPress={this.handleSignUp}
                 />
+
+                <TouchableOpacity onPress={() => this.props.navigation.navigate("Login")}>
+                    <Text>Login (button)</Text>
+                </TouchableOpacity>
 
             </SafeAreaView>
         )

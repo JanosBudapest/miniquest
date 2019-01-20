@@ -1,10 +1,13 @@
-import { createBottomTabNavigator, createStackNavigator } from "react-navigation";
+import {createBottomTabNavigator, createStackNavigator, createSwitchNavigator} from "react-navigation";
 import React from "react";
 import {Image} from "react-native";
 import IconMaterialUi from "react-native-vector-icons/MaterialIcons";
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 import Home from "../features/home/Home";
+import SignUp from "../features/signUp/SignUp";
+import Login from "../features/Login/Login";
+
 import Tab1Screen2 from "../Tab1Screen2";
 import Tab2Screen1 from "../Tab2Screen1";
 import Tab2Screen2 from "../Tab2Screen2";
@@ -44,7 +47,7 @@ const tabs = createBottomTabNavigator({
         }, {
             navigationOptions: {
                 tabBarLabel: "Quests",
-                tabBarIcon: <Image source={require("../images/home/1x/baseline_home_black_18dp.png")} />
+                tabBarIcon: <Image source={require("../images/home/1x/baseline_home_black_18dp.png")}/>
             }
         }),
 
@@ -58,10 +61,10 @@ const tabs = createBottomTabNavigator({
         }
 
     }, {
-            navigationOptions: {
-                tabBarLabel: "Karte"
-            }
-        }),
+        navigationOptions: {
+            tabBarLabel: "Karte"
+        }
+    }),
 
     Tab4: createStackNavigator({
 
@@ -73,10 +76,10 @@ const tabs = createBottomTabNavigator({
         }
         */
     }, {
-            navigationOptions: {
-                tabBarLabel: "Nachrichten"
-            }
-        }),
+        navigationOptions: {
+            tabBarLabel: "Nachrichten"
+        }
+    }),
 
     Tab5: createStackNavigator({
 
@@ -88,13 +91,21 @@ const tabs = createBottomTabNavigator({
         }
         */
     }, {
-            navigationOptions: {
-                tabBarLabel: "Profil",
-                tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
-            }
-        }),
+        navigationOptions: {
+            tabBarLabel: "Profil",
+            tabBarIcon: <IconMaterialUi name={"person"} size={24}/>
+        }
+    }),
 
 
 });
 
-export default tabs;
+export default createSwitchNavigator(
+    {
+        SignUp: SignUp,
+        Login: Login,
+        App: tabs,
+    }, {
+        initialRouteName: "SignUp",
+    }
+)

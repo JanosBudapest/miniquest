@@ -10,7 +10,7 @@ import Home from "../features/home/Home";
 import SignUp from "../features/signUp/SignUp";
 import Login from "../features/Login/Login";
 
-import Tab1Screen2 from "../Tab1Screen2";
+import NewQuest from "../features/quests/NewQuest";
 import Tab2Screen1 from "../Tab2Screen1";
 import Tab2Screen2 from "../Tab2Screen2";
 import Tab3Screen1 from "../Tab3Screen1";
@@ -26,7 +26,7 @@ const tabs = createBottomTabNavigator({
                 screen: Home,
             },
             Tab1Screen2: {
-                screen: Tab1Screen2,
+                screen: NewQuest,
             }
         }, {
             navigationOptions: {
@@ -110,6 +110,6 @@ export default createSwitchNavigator(
         Login: Login,
         App: tabs,
     }, {
-        initialRouteName: "Login",
+        initialRouteName: "App",
     }
 )
